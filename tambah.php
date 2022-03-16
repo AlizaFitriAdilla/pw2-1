@@ -9,7 +9,7 @@
 
 <?php
 if(isset($_POST['nim']) and !empty($_POST['nim'])) {    
-  include('connection.php');
+  include('koneksi.php');
   $sql = "insert into mahasiswa(nim, nama, kelas) values('" .
       $_POST['nim'] . "','" . $_POST['nama'] . "','" . $_POST['kelas'] . "')";
   $result = pg_affected_rows(pg_query($sql));
