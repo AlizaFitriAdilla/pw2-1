@@ -1,5 +1,5 @@
 <?php
-include("connection.php");
+include("koneksi.php");
 
 $sql = "select * from mahasiswa where nim='" . $_GET['nim'] . "'";
 $result = pg_query($sql);
